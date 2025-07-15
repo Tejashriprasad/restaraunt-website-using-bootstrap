@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gallery - Tandooriwala</title>
+
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url('gallery-bg.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            margin: 0;
+            padding: 60px 20px;
+        }
+
+        .gallery-container {
+            max-width: 1000px;
+            margin: auto;
+            background-color: rgba(0, 0, 0, 0.75);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.6);
+        }
+
+        h1 {
+            text-align: center;
+            color: #ffcc00;
+            margin-bottom: 20px;
+        }
+
+        p.description {
+            text-align: center;
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .photos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .photos img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.4);
+            transition: transform 0.3s;
+        }
+
+        .photos img:hover {
+            transform: scale(1.05);
+        }
+
+        .back-link {
+            display: block;
+            text-align: center;
+            margin-top: 40px;
+            color: #ffcc00;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Bootstrap Alerts -->
+    <div class="container mt-3">
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            👋 Welcome to the Tandooriwala Gallery! Enjoy the virtual tour.
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+
+        <div class="alert alert-info alert-dismissible fade show" role="alert">
+            🔥 Don’t miss our signature live Tandoori kitchen!
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    </div>
+
+    <!-- Gallery Container -->
+    <div class="gallery-container">
+        <h1>Our Gallery</h1>
+        <p class="description">
+            Tandooriwala offers a mesmerizing dining experience with a warm, inviting ambiance. From elegant lighting to rustic tandoor counters and cozy seating,
+            every corner of our restaurant speaks charm. Our chefs bring passion to every dish, and our setting brings comfort to every guest.
+        </p>
+
+        <div class="photos">
+            <img src="restaurant1.jpg" alt="Interior View">
+            <img src="restaurant2.jpg" alt="Tandoori Kitchen">
+            <img src="restaurant3.jpg" alt="Outdoor Seating">
+            <img src="restaurant4.jpg" alt="Evening Ambiance">
+            <img src="restaurant5.jpg" alt="Dining Table Setup">
+            <img src="restaurant6.jpg" alt="Celebration Area">
+        </div>
+
+        <a class="back-link" href="index.html">← Back to Home</a>
+    </div>
+
+    <!-- Bootstrap JS (for dismissible alerts) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

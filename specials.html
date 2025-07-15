@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Our Specials - Tandooriwala</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      background: url('food2.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      padding-top: 70px;
+      font-family: Arial, sans-serif;
+    }
+
+    .specials-section {
+      background-color: rgba(0, 0, 0, 0.75);
+      border-radius: 10px;
+      padding: 40px;
+      max-width: 1000px;
+      margin: auto;
+      box-shadow: 0 0 15px rgba(0,0,0,0.6);
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      transition: transform 0.3s;
+      box-shadow: 0 8px 20px rgba(255,255,255,0.3);
+    }
+
+    .card {
+      transition: transform 0.3s ease;
+      background-color: rgba(255, 255, 255, 0.05);
+      border: 1px solid #ffc107;
+    }
+
+    .card-title {
+      color: #ffc107;
+    }
+
+    h1 {
+      text-align: center;
+      text-shadow: 2px 2px 4px #000;
+      margin-bottom: 30px;
+    }
+
+    .card-text {
+      color: #ddd;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="specials-section">
+    <h1 class="text-success"> Our Specials</h1>
+    
+    <div class="row g-4">
+      <!-- Special 1 -->
+      <div class="col-md-4">
+        <div class="card h-100 text-center">
+          <img src="dish7.jpg" class="card-img-top" alt="Tandoori Chicken">
+          <div class="card-body">
+            <h5 class="card-title">Tandoori Chicken</h5>
+            <p class="card-text">Marinated overnight and roasted in a clay oven for a smoky, juicy finish.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Special 2 -->
+      <div class="col-md-4">
+        <div class="card h-100 text-center">
+          <img src="dish6.jpg" class="card-img-top" alt="Paneer Tikka">
+          <div class="card-body">
+            <h5 class="card-title">Paneer Tikka</h5>
+            <p class="card-text">Chunks of paneer grilled with our secret spices and love.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Special 3 -->
+      <div class="col-md-4">
+        <div class="card h-100 text-center">
+          <img src="dish5.png" class="card-img-top" alt="Chicken Biryani">
+          <div class="card-body">
+            <h5 class="card-title">Chicken Dum Biryani</h5>
+            <p class="card-text">Aromatic basmati rice layered with slow-cooked chicken, sealed & steamed.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center mt-4">
+      <a href="index.html" class="btn btn-success">← Back to Home</a>
+    </div>
+  </div>
+
+  <!-- Bootstrap 5 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

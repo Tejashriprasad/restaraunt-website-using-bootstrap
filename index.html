@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tandooriwala - Restaurant</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url('.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #444444;
+            overflow-x: hidden;
+            margin: 0;
+            padding: 80px 0 0 0;
+        }
+
+        /* Header Bar */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 10px 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            z-index: 1000;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .logo span {
+            font-size: 20px;
+            color: white;
+            font-weight: bold;
+        }
+
+        .navbar {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .navbar a, .dropdown-toggle {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .navbar a:hover, .dropdown-menu a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+            padding: 5px 10px;
+        }
+
+        .home {
+            text-align: center;
+            padding: 120px 20px 50px;
+            color: white;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+        }
+
+        .home h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .home p {
+            font-size: 20px;
+            max-width: 800px;
+            margin: 0 auto 30px;
+        }
+
+        .home .btn-group {
+            margin-top: 20px;
+        }
+
+        .carousel-container {
+            width: 80%;
+            margin: 50px auto;
+            overflow: hidden;
+            position: relative;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+
+        .carousel-slide {
+            display: flex;
+            width: 300%;
+            animation: slide 12s infinite;
+        }
+
+        .carousel-slide img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+
+        @keyframes slide {
+            0%   { transform: translateX(0%); }
+            33%  { transform: translateX(-100%); }
+            66%  { transform: translateX(-200%); }
+            100% { transform: translateX(0%); }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <div class="header">
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+            <span>Tandooriwala</span>
+        </div>
+
+        <div class="navbar">
+            <a href="#home">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="menu.html">Menu</a>
+
+            <!-- Dropdown -->
+            <div class="dropdown">
+                <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    More
+                </a>
+                <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="specials.html">Our Specials</a></li>
+    <li><a class="dropdown-item" href="offers.html">Offers</a></li>
+    <li><a class="dropdown-item" href="careers.html">Careers</a></li>
+</ul>
+
+            </div>
+
+            <a href="contact.html">Contact Us</a>
+        </div>
+    </div>
+
+    <!-- Home Section -->
+    <div id="home" class="home">
+        <h1>Welcome to Tandooriwala!!</h1>
+        <p>Experience a Tandooriwala of spices and flavors at our fine dining restaurant. Enjoy delightful dishes, rich ambiance, and exceptional service.</p>
+
+        <!-- Bootstrap 5 Buttons -->
+        <div class="btn-group">
+            <a href="menu.html" class="btn btn-outline-warning btn-lg m-2">View Menu</a>
+            <a href="feedback.html" class="btn btn-outline-primary btn-lg m-2">feedback</a>
+            <a href="Book.html" class="btn btn-outline-success btn-lg m-2">Book a Table</a>
+            <a href="rating.html" class="btn btn-outline-danger btn-lg m-2">Rating</a>
+        </div>
+    </div>
+
+    <!-- Carousel Section -->
+    <div class="carousel-container">
+        <div class="carousel-slide">
+            <img src="dish1.png" alt="Delicious Dish 1">
+            <img src="dish2.jpg" alt="Delicious Dish 2">
+            <img src="dish3.webp" alt="Delicious Dish 3">
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

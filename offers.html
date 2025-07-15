@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Special Offers - Tandooriwala</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      background: url('food2.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      padding-top: 70px;
+      font-family: Arial, sans-serif;
+    }
+
+    .offers-section {
+      background-color: rgba(0, 0, 0, 0.7);
+      border-radius: 10px;
+      padding: 40px;
+      max-width: 900px;
+      margin: auto;
+      box-shadow: 0 0 20px rgba(0,0,0,0.6);
+    }
+
+    h1, h4 {
+      text-align: center;
+      text-shadow: 2px 2px 4px #000;
+    }
+
+    .offer-card {
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      border-left: 5px solid #ffc107;
+    }
+
+    .btn-offcanvas {
+      position: fixed;
+      top: 15px;
+      left: 15px;
+      z-index: 1050;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Toggle Button for Sidebar -->
+  <button class="btn btn-success btn-offcanvas" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar" aria-controls="sidebar">
+    ☰ Menu
+  </button>
+
+  <!-- Offcanvas Sidebar -->
+  <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="sidebar" aria-labelledby="sidebarLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="sidebarLabel">Tandooriwala</h5>
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="nav flex-column">
+        <li class="nav-item"><a href="index.html" class="nav-link text-white">Home</a></li>
+        <li class="nav-item"><a href="menu.html" class="nav-link text-white">Menu</a></li>
+        <li class="nav-item"><a href="about.html" class="nav-link text-white">About Us</a></li>
+        <li class="nav-item"><a href="gallery.html" class="nav-link text-white">Gallery</a></li>
+        <li class="nav-item"><a href="contact.html" class="nav-link text-white">Contact Us</a></li>
+        <li class="nav-item"><a href="offers.html" class="nav-link text-warning fw-bold">Offers</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Offers Content -->
+  <div class="offers-section mt-4">
+    <h1 class="text-success"> Exclusive Food Offers</h1>
+    <p class="text-center mb-4">Enjoy amazing discounts and combos at Tandooriwala!</p>
+
+    <div class="offer-card">
+      <h4> Buy 2 Biryani, Get 1 Free!</h4>
+      <p>Order any two Chicken or Veg Biryani and get one extra Biryani free! Valid on dine-in only.</p>
+    </div>
+
+    <div class="offer-card">
+      <h4>Tandoori Nights - 25% Off</h4>
+      <p>Every Friday, enjoy a flat 25% off on all tandoori items after 6 PM.</p>
+    </div>
+
+    <div class="offer-card">
+      <h4> Paneer Tikka Combo - ₹200</h4>
+      <p>Get 1 Paneer Tikka, 2 Butter Naans, and a drink for just ₹299. Perfect for vegetarians!</p>
+    </div>
+
+    <div class="offer-card">
+      <h4>Family Feast Offer - Save ₹150</h4>
+      <p>Order for 4 or more and get ₹150 off your bill. Includes complimentary Gulab Jamun.</p>
+    </div>
+  </div>
+
+  <!-- Bootstrap 5 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
